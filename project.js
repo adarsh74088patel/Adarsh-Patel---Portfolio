@@ -25,7 +25,7 @@ const projectsData = [
             "Contact Form with Validation"
         ],
         screenshots: [
-            { src: "Assets/Adarsh.png", title: "Home Page" }
+            { src: "Assets/Portfolio.png", title: "Home Page" }
         ],
         projectInfo: {
             type: "Web Application",
