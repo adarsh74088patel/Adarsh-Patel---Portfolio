@@ -4,1577 +4,923 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh Patel - Portfolio</title>
-    <!-- Google Fonts for modern typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRJBPE82X7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LRJBPE82X7');
-</script>
+    <!-- Primary Meta Tags -->
+    <title>Adarsh Patel - Portfolio | AI/ML Student & Frontend Developer</title>
+    <meta name="title" content="Adarsh Patel - Portfolio | AI/ML Student & Frontend Developer">
+    <meta name="description"
+        content="Portfolio of Adarsh Patel, a passionate B.Tech AI/ML student and Frontend Developer building modern web applications and exploring AI technologies.">
+    <meta name="keywords"
+        content="Adarsh Patel, Portfolio, Frontend Developer, AI/ML Student, Web Developer, Artificial Intelligence, Machine Learning, React, JavaScript">
+    <meta name="author" content="Adarsh Patel">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://TODO-YOUR-DOMAIN.com/">
+    <meta property="og:title" content="Adarsh Patel - Portfolio | AI/ML Student & Frontend Developer">
+    <meta property="og:description"
+        content="Portfolio of Adarsh Patel, a passionate B.Tech AI/ML student and Frontend Developer building modern web applications and exploring AI technologies.">
+    <meta property="og:image" content="https://TODO-YOUR-DOMAIN.com/Assets/Adarsh.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://TODO-YOUR-DOMAIN.com/">
+    <meta property="twitter:title" content="Adarsh Patel - Portfolio | AI/ML Student & Frontend Developer">
+    <meta property="twitter:description"
+        content="Portfolio of Adarsh Patel, a passionate B.Tech AI/ML student and Frontend Developer building modern web applications and exploring AI technologies.">
+    <meta property="twitter:image" content="https://TODO-YOUR-DOMAIN.com/Assets/Adarsh.png">
+
+    <link rel="canonical" href="https://TODO-YOUR-DOMAIN.com/">
+
+    <link rel="icon" type="image/png" href="Assets/name-logo.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d6efd">
+    <link rel="apple-touch-icon" href="Assets/name-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- Main Header -->
-    <header class="header">
-        <!-- Logo Section -->
+<body class="loading">
+
+    <!-- ======================================= Preloader ================================= -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="logo">
+                <div class="logo-img"><img src="Assets/name-logo.png" alt="Adarsh Patel Logo"></div>
+                <div class="logo-name">Adarsh <span>Patel</span></div>
+            </div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+
+
         <div class="logo">
-            <a href="#">Adarsh <span>Patel</span></a>
+            <div class="logo-img"><img src="Assets/name-logo.png" alt="Adarsh Patel Logo"></div>
+            <div class="logo-name">Adarsh <span>Patel</span></div>
         </div>
 
-        <!-- Navigation Tabs -->
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#home" class="tab-link active" data-target="home">Home</a></li>
-                <li><a href="#about" class="tab-link" data-target="about">About</a></li>
-                <li><a href="#skills" class="tab-link" data-target="skills">Skills</a></li>
-                <li><a href="#projects" class="tab-link" data-target="projects">Projects</a></li>
-                <li><a href="#education" class="tab-link" data-target="education">Education</a></li>
-                <li><a href="#certificates" class="tab-link" data-target="certificates">Certificates</a></li>
-                <li><a href="#contact" class="tab-link" data-target="contact">Contact</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a class="nav-link active" data-tab="home">Home</a></li>
+            <li><a class="nav-link" data-tab="about">About</a></li>
+            <li><a class="nav-link" data-tab="skills">Skills</a></li>
+            <li><a class="nav-link" data-tab="projects">Projects</a></li>
+            <li><a class="nav-link" data-tab="education">Education</a></li>
+            <li><a class="nav-link" data-tab="certificates">Certificates</a></li>
+            <li><a class="nav-link" data-tab="contact">Contact</a></li>
+        </ul>
 
-        <!-- Right Side: Theme Toggle -->
-        <div class="header-right">
-            <button class="theme-toggle" aria-label="Toggle Light/Dark Mode">
-                <img src="assets/icons/sun.svg" alt="Theme Toggle" width="24" height="24">
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <!-- Home Tab Content -->
-        <div id="home" class="tab-content active">
-            <!-- Hero Section -->
-            <section class="hero">
-                <!-- Background Blob Decorations -->
-                <div class="bg-shape bg-shape-1"></div>
-                <div class="bg-shape bg-shape-2"></div>
-
-                <div class="hero-content">
-                    <div class="badge">Hello, I'm</div>
-                    <h1 class="hero-title">Adarsh <span>Patel</span></h1>
-                    <h2 class="hero-subtitle"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
-                    <div class="hero-description-wrapper">
-                        <p class="hero-description">
-                            Passionate about building modern web applications,<br>
-                            creating user-friendly interfaces and exploring<br>
-                            AI technologies.
-                        </p>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary tab-link" data-target="projects">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="9" y1="3" x2="9" y2="21"></line>
-                            </svg>
-                            View Projects
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 18l6-6-6-6" />
-                            </svg>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary tab-link" data-target="contact">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            Contact Me
-                        </a>
-                    </div>
-
-                    <div class="social-links">
-                        <p>Follow Me</p>
-                        <a href="https://github.com/adarsh74088patel" target="_blank" class="social-icon" aria-label="GitHub"><img src="assets/icons/github.svg"
-                                alt="GitHub"></a>
-                        <a href="https://www.linkedin.com/in/adarsh-patel-842075411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg"
-                                alt="LinkedIn"></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><img src="assets/icons/twitter.svg"
-                                alt="Twitter"></a>
-                        <a href="#" class="social-icon" aria-label="Instagram"><img src="assets/icons/instagram.svg"
-                                alt="Instagram"></a>
-                    </div>
-                </div>
-
-                <div class="hero-image-wrapper">
-                    <div class="image-container">
-                        <img src="assets/Adarsh.png" alt="Adarsh Patel" class="hero-img">
-                        <div class="img-decor img-decor-1"></div>
-                        <div class="img-decor img-decor-2"></div>
-                    </div>
-                    <!-- Small floating decorative dots (using simple CSS) -->
-                    <div class="dot-pattern"></div>
-                </div>
-            </section>
-
-            <!-- Quick Stats Section -->
-            <section class="quick-stats">
-                <h3 class="stats-title">Quick Stats</h3>
-                <div class="stats-grid">
-                    <!-- Stat 1 -->
-                    <div class="stat-card">
-                        <div class="stat-icon ai-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
-                                <path
-                                    d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h4>AI/ML Enthusiast</h4>
-                            <p>Exploring AI technologies and building smart solutions.</p>
-                        </div>
-                    </div>
-                    <!-- Stat 2 -->
-                    <div class="stat-card">
-                        <div class="stat-icon dev-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h4>Frontend Developer</h4>
-                            <p>Creating responsive and interactive web interfaces.</p>
-                        </div>
-                    </div>
-                    <!-- Stat 3 -->
-                    <div class="stat-card">
-                        <div class="stat-icon res-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h4>Responsive Design</h4>
-                            <p>Building websites that look great on every device.</p>
-                        </div>
-                    </div>
-                    <!-- Stat 4 -->
-                    <div class="stat-card">
-                        <div class="stat-icon prob-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 22h-4"></path>
-                                <path d="M15.58 17h-7.16"></path>
-                                <path d="M12 2v2"></path>
-                                <path d="M4 12H2"></path>
-                                <path d="M22 12h-2"></path>
-                                <path d="M6.34 6.34L4.93 4.93"></path>
-                                <path d="M19.07 4.93l-1.41 1.41"></path>
-                                <path d="M8 17a5 5 0 1 1 8 0v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2z"></path>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h4>Problem Solver</h4>
-                            <p>Solving real-world problems with creative solutions.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="nav-resume">
+            <a href="Assets/resume.pdf" download="Adarsh_Patel_Resume.pdf" class="btn btn-primary"
+                style="padding: 8px 20px; font-size: 14px; border: none; cursor: pointer;">
+                <i class="fas fa-download"></i> Resume
+            </a>
         </div>
 
-        <!-- About Tab Content -->
-        <div id="about" class="tab-content">
-            <section class="about-section">
+        <div class="hamburger" id="hamburger" role="button" aria-label="Toggle Navigation Menu" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
 
+    <!-- ---------------------------------------------------- Home page ---------------------------------------- -->
 
+    <section id="home" class="tab-content active-tab">
+        <div class="hero-section">
+            <div class="hero-left">
+                <div class="greeting">Hello, I'm</div>
+                <h1 class="hero-name">Adarsh <span>Patel</span></h1>
+                <h2 class="hero-title">I'm a <span id="typed-text" class="text-dynamic"></span><span
+                        class="typed-cursor">|</span></h2>
+                <div class="hero-desc">
+                    Passionate about building modern web applications,<br>
+                    creating user-friendly interfaces and exploring<br>
+                    AI technologies.
+                </div>
 
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary"><i class="far fa-window-restore"></i> View Projects <i
+                            class="fas fa-chevron-right arrow"></i></a>
+                    <a href="#contact" class="btn btn-outline"><i class="far fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
 
+            <div class="hero-right">
+                <div class="image-container">
+                    <div class="blob-bg"></div>
+                    <div class="circle-outline"></div>
+                    <div class="dots-bg"></div>
+                    <div class="small-blue-dot top-right"></div>
+                    <div class="small-blue-dot bottom-left"></div>
+                    <img src="Assets/Adarsh.png" alt="Adarsh Patel - AI/ML Student and Frontend Developer"
+                        class="profile-img">
+                </div>
+            </div>
+        </div>
 
-                <div class="about-hero">
-                    <div class="about-left">
+        <div class="quick-stats">
+            <div class="stat-item">
+                <div class="stat-icon icon-blue">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>AI/ML Enthusiast</h3>
+                    <p>Exploring AI technologies and building smart solutions.</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-icon icon-green">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Frontend Developer</h3>
+                    <p>Creating responsive and interactive web interfaces.</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-icon icon-yellow">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Responsive Design</h3>
+                    <p>Building websites that look great on every device.</p>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-icon icon-purple">
+                    <i class="far fa-lightbulb"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Problem Solver</h3>
+                    <p>Solving real-world problems with creative solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="about-dots"></div>
+    <!-- ======================================= About page ================================= -->
+    <section id="about" class="tab-content">
+        <div class="about-container">
+            <div class="about-bg-elements">
+                <div class="bg-shape-dots"></div>
+                <div class="bg-shape-rect"></div>
+                <div class="bg-shape-circle"></div>
+            </div>
 
-                        <div class="about-image-wrapper">
+            <div class="about-left">
+                <div class="about-image-wrapper">
+                    <div class="about-image-bg"></div>
+                    <img src="Assets/Adarsh.png" alt="Adarsh Patel Profile Picture" class="about-img">
 
-                            <div class="about-circle">
-                                <img src="Assets/Adarsh.png" alt="Adarsh Patel">
+                    <div class="about-floating-card">
+                        <div class="floating-item">
+                            <div class="floating-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="floating-text">
+                                <h6>B.Tech</h6>
+                                <p>AI/ML Student</p>
                             </div>
-
-                            <span class="orbit orbit-one"></span>
-                            <span class="orbit orbit-two"></span>
-
-                            <span class="orbit-dot dot-a"></span>
-                            <span class="orbit-dot dot-b"></span>
-                            <span class="orbit-dot dot-c"></span>
-
                         </div>
-
-                    </div>
-
-                    <div class="about-right">
-
-                        <span class="about-tag">About Me</span>
-
-                        <h1 class="about-name">
-                            Adarsh <span>Patel</span>
-                        </h1>
-
-                        <h2 class="about-role">
-                            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-                        </h2>
-
-                        <p>
-                            I am a passionate B.Tech (Artificial Intelligence &
-                            Machine Learning) student at Maharishi Mahesh Yogi
-                            Ramayan University, Ayodhya. I enjoy building modern
-                            web applications, creating responsive user interfaces,
-                            and exploring AI technologies.
-                        </p>
-
-                        <p>
-                            My goal is to become a skilled AI Engineer and Full
-                            Stack Developer while continuously improving my
-                            technical and problem-solving abilities.
-                        </p>
-
+                        <div class="floating-divider"></div>
+                        <div class="floating-item">
+                            <div class="floating-icon"><i class="fas fa-code"></i></div>
+                            <div class="floating-text">
+                                <h6>Frontend</h6>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                        <div class="floating-divider"></div>
+                        <div class="floating-item">
+                            <div class="floating-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="floating-text">
+                                <h6>Goal</h6>
+                                <p>Innovate & Build</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- About Info & Education Grid -->
-                <div class="about-grid-2">
-                    <!-- Personal Information Card -->
-                    <div class="card">
-                        <h3 class="card-title">Personal Information</h3>
-                        <ul class="info-list">
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                                <span class="label">Name</span>
-                                <span class="colon">:</span>
-                                <span class="value">Adarsh Patel</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                <span class="label">Date of Birth</span>
-                                <span class="colon">:</span>
-                                <span class="value">06 Aug 2008</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <span class="label">City</span>
-                                <span class="colon">:</span>
-                                <span class="value">Gonda</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
-                                    <line x1="8" y1="2" x2="8" y2="18"></line>
-                                    <line x1="16" y1="6" x2="16" y2="22"></line>
-                                </svg>
-                                <span class="label">State</span>
-                                <span class="colon">:</span>
-                                <span class="value">Uttar Pradesh</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                                    </path>
-                                </svg>
-                                <span class="label">Country</span>
-                                <span class="colon">:</span>
-                                <span class="value">India</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                                </svg>
-                                <span class="label">Education</span>
-                                <span class="colon">:</span>
-                                <span class="value">B.Tech AI/ML (1st Year)</span>
-                            </li>
+                <div class="about-info-list">
+                    <div class="info-row">
+                        <div class="info-label"><i class="far fa-calendar-alt"></i> Name</div>
+                        <div class="info-value">Adarsh Patel</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label"><i class="far fa-envelope"></i> Email</div>
+                        <div class="info-value">adarshpatel74088@gmail.com</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label"><i class="fas fa-map-marker-alt"></i> Location</div>
+                        <div class="info-value">Patijiyakhurd, Chappiya, Gonda</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label"><i class="far fa-user"></i> Availability</div>
+                        <div class="info-value">Open to Opportunities</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div class="badge">Get To Know Me</div>
+                <h2 class="about-heading">About <span>Me</span></h2>
+
+                <div class="about-text">
+                    <p>Hello! I'm Adarsh Patel, a B.Tech student specializing in Artificial Intelligence and Machine
+                        Learning.</p>
+                    <p>I am passionate about building modern web applications, creating user-friendly interfaces, and
+                        exploring AI technologies.</p>
+                    <p>My goal is to combine AI and web development to create innovative digital solutions that make a
+                        difference.</p>
+                    <p>I love learning new technologies, solving real-world problems, and continuously improving my
+                        skills.</p>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon"><i class="far fa-user"></i></div>
+                        <h5>Who I Am</h5>
+                        <p>A passionate learner and developer who loves to explore new technologies and build impactful
+                            projects.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon"><i class="far fa-lightbulb"></i></div>
+                        <h5>What I Do</h5>
+                        <p>I build responsive websites, work on AI/ML projects and create smart solutions for real-world
+                            problems.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                        <h5>My Goal</h5>
+                        <p>To become a skilled engineer and use AI & Web development to create innovative digital
+                            products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-quote-banner">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="quote-content">
+                <p class="quote-text">"Learning never exhausts the mind."</p>
+                <p class="quote-author">- Leonardo da Vinci</p>
+            </div>
+            <div class="quote-decoration">
+                <div class="books-art">
+                    <div class="plant-pot">
+                        <div class="leaf leaf-1"></div>
+                        <div class="leaf leaf-2"></div>
+                        <div class="leaf leaf-3"></div>
+                        <div class="pot"></div>
+                    </div>
+                    <div class="book book-1"></div>
+                    <div class="book book-2"></div>
+                    <div class="book book-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================= Skills Page ================================= -->
+    <section id="skills" class="tab-content">
+        <div class="skills-bg-dots"></div>
+        <div class="skills-bg-circle"></div>
+
+        <div class="skills-container">
+            <div class="skills-header">
+                <h2>My <span>Skills</span></h2>
+                <p>A blend of technical knowledge, problem solving and creative thinking.</p>
+            </div>
+
+            <div class="skills-cards-wrapper" id="skills-cards-wrapper">
+
+
+
+
+
+
+
+            </div>
+
+            <div class="other-strengths">
+                <h4 class="strengths-heading">Other Strengths</h4>
+                <div class="strengths-list" id="strengths-list"></div>
+            </div>
+
+            <div class="skills-snapshot">
+                <h4 class="strengths-heading">Skills Snapshot</h4>
+                <div class="snapshot-grid">
+                    <div class="snapshot-item"><i class="fab fa-html5" style="color: #e34f26;"></i><span>HTML</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fab fa-css3-alt" style="color: #1572b6;"></i><span>CSS</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fab fa-js-square"
+                            style="color: #f7df1e;"></i><span>JavaScript</span></div>
+                    <div class="snapshot-item"><i class="fas fa-database" style="color: #336791;"></i><span>SQL</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fas fa-leaf" style="color: #47a248;"></i><span>MongoDB</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fas fa-fire" style="color: #ffca28;"></i><span>Firebase</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fab fa-python" style="color: #3776ab;"></i><span>Python</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fas fa-file-word" style="color: #2b579a;"></i><span>MS
+                            Word</span></div>
+                    <div class="snapshot-item"><i class="fas fa-file-excel" style="color: #217346;"></i><span>MS
+                            Excel</span></div>
+                    <div class="snapshot-item"><i class="fas fa-file-powerpoint" style="color: #d24726;"></i><span>MS
+                            PowerPoint</span></div>
+                    <div class="snapshot-item"><i class="fab fa-git-alt" style="color: #f05032;"></i><span>Git</span>
+                    </div>
+                    <div class="snapshot-item"><i class="fab fa-github" style="color: #181717;"></i><span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================= Projects Page ================================= -->
+    <section id="projects" class="tab-content">
+        <div class="projects-bg-dots"></div>
+        <div class="projects-bg-dots-right"></div>
+        <div class="projects-bg-circle"></div>
+
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2>My <span>Projects</span></h2>
+                <p>Here are some of the projects I've worked on.</p>
+            </div>
+
+            <div class="projects-filters">
+                <button class="filter-btn active-filter">All</button>
+                <button class="filter-btn">Web Development</button>
+                <button class="filter-btn">AI / ML</button>
+                <button class="filter-btn">Frontend</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+
+            <div class="projects-stats-banner" id="projects-stats-banner"></div>
+        </div>
+    </section>
+
+    <!-- ======================================= Project Details Page ================================= -->
+    <section id="project-details" class="tab-content">
+        <div class="project-details-container">
+            <button class="back-to-projects-btn" onclick="goBackToProjects()">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </button>
+
+            <div class="project-details-grid">
+                <!-- Left Column -->
+                <div class="project-details-left">
+                    <div class="pd-badge" id="pd-badge"><i class="far fa-star"></i> Featured Project</div>
+                    <h1 class="pd-title" id="pd-title">Project Title</h1>
+                    <p class="pd-short-desc" id="pd-short-desc">Short description goes here.</p>
+
+                    <div class="pd-tech-tags" id="pd-tech-tags">
+                        <!-- Tech tags injected here -->
+                    </div>
+
+                    <div class="pd-action-btns">
+                        <a href="#" class="btn btn-primary" id="pd-live-link" target="_blank"><i
+                                class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="btn btn-outline" id="pd-github-link" target="_blank"><i
+                                class="fab fa-github"></i> GitHub Repository</a>
+                    </div>
+
+                    <div class="pd-section">
+                        <h3 class="pd-section-title"><i class="far fa-file-alt"></i> About The Project</h3>
+                        <p class="pd-long-desc" id="pd-long-desc">Long description goes here.</p>
+                    </div>
+
+                    <div class="pd-section">
+                        <h3 class="pd-section-title"><i class="far fa-star"></i> Key Features</h3>
+                        <ul class="pd-features-list" id="pd-features-list">
+                            <!-- Features injected here -->
                         </ul>
                     </div>
 
-                    <!-- Education Journey Card -->
-                    <div class="card">
-                        <h3 class="card-title">Education Journey</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                    </svg>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Class 10th</h4>
-                                    <p class="inst">UP Board | 2022-2023</p>
-                                    <p class="score">83.7%</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon timeline-icon-green">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                    </svg>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Class 12th</h4>
-                                    <p class="inst">UP Board | 2024-2025</p>
-                                    <p class="score score-green">67%</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon timeline-icon-purple">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                                    </svg>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>B.Tech AI/ML</h4>
-                                    <p class="inst">Maharishi Mahesh Yogi Ramayan University</p>
-                                    <p class="score score-purple">Currently Pursuing</p>
-                                </div>
-                            </div>
+                    <div class="pd-section">
+                        <h3 class="pd-section-title"><i class="far fa-image"></i> Screenshots</h3>
+                        <div class="pd-screenshots" id="pd-screenshots">
+                            <!-- Screenshots injected here -->
                         </div>
+                    </div>
+
+                    <div class="pd-navigation">
+                        <button class="btn btn-outline" id="prev-project-btn" onclick="navigateProject(-1)"><i
+                                class="fas fa-arrow-left"></i> Previous Project</button>
+                        <button class="btn btn-primary" id="next-project-btn" onclick="navigateProject(1)">Next Project
+                            <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
 
-                <!-- What Drives Me Section -->
-                <div class="drives-me-container">
-                    <div class="drives-header">
-                        <h3>What Drives Me</h3>
-                    </div>
-                    <div class="drives-grid">
-                        <!-- Card 1 -->
-                        <div class="drives-card">
-                            <div class="icon-circle icon-blue">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                                </svg>
-                            </div>
-                            <h4 class="title">B.Tech Student</h4>
-                            <span class="subtitle subtitle-blue">Learning AI & ML</span>
-                            <p>Pursuing B.Tech in AI/ML and building a strong foundation in technology.</p>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="drives-card">
-                            <div class="icon-circle icon-green">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>
-                            </div>
-                            <h4 class="title">Frontend Developer</h4>
-                            <span class="subtitle subtitle-blue">Responsive Websites</span>
-                            <p>Creating clean, responsive and user-friendly websites with modern technologies.</p>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="drives-card">
-                            <div class="icon-circle icon-purple">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
-                                    </path>
-                                    <path
-                                        d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
-                                    </path>
-                                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
-                                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
-                                    <path d="M6.002 6.5A3 3 0 0 1 5.603 5.125"></path>
-                                    <path d="M11.8 12.556a3.1 3.1 0 0 0-3.6 3.6"></path>
-                                    <path d="M12.2 12.556a3.1 3.1 0 0 1 3.6 3.6"></path>
-                                </svg>
-                            </div>
-                            <h4 class="title">AI Enthusiast</h4>
-                            <span class="subtitle subtitle-blue">Exploring AI Tech</span>
-                            <p>Passionate about exploring AI technologies and building smart solutions.</p>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="drives-card">
-                            <div class="icon-circle icon-orange">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
-                                    </path>
-                                    <path
-                                        d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
-                                    </path>
-                                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                </svg>
-                            </div>
-                            <h4 class="title">Fast Learner</h4>
-                            <span class="subtitle subtitle-blue">Continuous Growth</span>
-                            <p>Always eager to learn new technologies and improve problem-solving skills.</p>
-                        </div>
+                <!-- Right Column -->
+                <div class="project-details-right">
+                    <div class="pd-preview-card">
+                        <img src="" alt="Project Main Preview" id="pd-main-img">
                     </div>
 
-                    <div class="drives-buttons">
-                        <a href="Assets/Resume.png" target="_blank" class="btn btn-primary">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            Download Resume
-                            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="9 18 15 12 9 6"></polyline>
-                            </svg>
-                        </a>
-                        <a href="Assets/Resume.png" target="_blank" class="btn btn-outline">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="16" y1="2" x2="16" y2="6"></line>
-                                <line x1="8" y1="2" x2="8" y2="6"></line>
-                                <line x1="3" y1="10" x2="21" y2="10"></line>
-                            </svg>
-                            View Certificates
-                            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="9 18 15 12 9 6"></polyline>
-                            </svg>
-                        </a>
+                    <div class="pd-info-card">
+                        <h3 class="pd-card-title"><i class="fas fa-info-circle"></i> Project Information</h3>
+                        <ul class="pd-info-list" id="pd-info-list">
+                            <!-- Info injected here -->
+                        </ul>
+                    </div>
+
+                    <div class="pd-info-card">
+                        <h3 class="pd-card-title"><i class="fas fa-graduation-cap"></i> What I Learned</h3>
+                        <ul class="pd-learned-list" id="pd-learned-list">
+                            <!-- Learnings injected here -->
+                        </ul>
                     </div>
                 </div>
-            </section>
-        </div>
-
-        <!-- Placeholders for other tabs to avoid empty clicks -->
-        <div id="skills" class="tab-content">
-            <section class="about-section skill-section-wrapper">
-                <div class="skill-header">My <span>Skills</span></div>
-                <p class="skill-description">A blend of technical knowledge, problem solving and creative thinking.</p>
-
-
-                <div class="skills-cards">
-                    <!-- Frontend -->
-                    <div class="skill-card card-frontend">
-                        <div class="card-header">
-                            <div class="icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                    <polyline points="10 8 8 10 10 12"></polyline>
-                                    <polyline points="14 8 16 10 14 12"></polyline>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                                </svg>
-                            </div>
-                            <div class="title-wrapper">
-                                <h3>Frontend</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="skill-item">
-                                <span class="skill-name">HTML5</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 95%;"></div>
-                                </div>
-                                <span class="skill-pct">95%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">CSS3</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
-                                <span class="skill-pct">90%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%;"></div>
-                                </div>
-                                <span class="skill-pct">85%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Responsive Design</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
-                                <span class="skill-pct">90%</span>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg>
-                            </div>
-                            <p>Building responsive and user-friendly web interfaces.</p>
-                        </div>
-                    </div>
-
-                    <!-- Programming -->
-                    <div class="skill-card card-programming">
-                        <div class="card-header">
-                            <div class="icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="7 8 3 12 7 16"></polyline>
-                                    <polyline points="17 8 21 12 17 16"></polyline>
-                                    <line x1="14" y1="4" x2="10" y2="20"></line>
-                                </svg>
-                            </div>
-                            <div class="title-wrapper">
-                                <h3>Programming</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="skill-item">
-                                <span class="skill-name">Python</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 10%;"></div>
-                                </div>
-                                <span class="skill-pct">10%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">C++</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Data Structures</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Problem Solving</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 10%;"></div>
-                                </div>
-                                <span class="skill-pct">10%</span>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M19 3H5v4.5A7.5 7.5 0 0012 15a7.5 7.5 0 007-7.5V3zm-2 4.5A5.5 5.5 0 0112 13a5.5 5.5 0 01-5-5.5V5h10v2.5zM12 15v6m-4 0h8"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <p>Strong foundation in programming and problem-solving.</p>
-                        </div>
-                    </div>
-
-                    <!-- AI/ML -->
-                    <div class="skill-card card-aiml">
-                        <div class="card-header">
-                            <div class="icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
-                                    <path
-                                        d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
-                                </svg>
-                            </div>
-                            <div class="title-wrapper">
-                                <h3>AI / ML</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="skill-item">
-                                <span class="skill-name">Machine Learning</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Data Analysis</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">AI Fundamentals</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Deep Learning (Basics)</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 0%;"></div>
-                                </div>
-                                <span class="skill-pct">0%</span>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg>
-                            </div>
-                            <p>Learning and building intelligent solutions with AI.</p>
-                        </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="skill-card card-tools">
-                        <div class="card-header">
-                            <div class="icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path
-                                        d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="title-wrapper">
-                                <h3>Tools</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="skill-item">
-                                <span class="skill-name">Git</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
-                                <span class="skill-pct">90%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">GitHub</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 95%;"></div>
-                                </div>
-                                <span class="skill-pct">95%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">VS Code</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
-                                <span class="skill-pct">90%</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Chrome DevTools</span>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 80%;"></div>
-                                </div>
-                                <span class="skill-pct">80%</span>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M13.13 2.13a1 1 0 0 1 1.4 0l6.34 6.34c.39.39.39 1.02 0 1.41l-2.12 2.12-7.75-7.75 2.13-2.12zM21 11c0 5.52-4.48 10-10 10-1.75 0-3.41-.45-4.86-1.24l-3.5 1.5 1.5-3.5C3.45 16.31 3 14.65 3 12.9c0-5.52 4.48-10 10-10l-2.59 2.59a1.998 1.998 0 0 0 0 2.83l6.34 6.34c.78.78 2.05.78 2.83 0L21 11z" />
-                                </svg>
-                            </div>
-                            <p>Using modern tools to build, test and deploy efficiently.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills Snapshot -->
-                <div class="skills-snapshot">
-                    <div class="snapshot-header">
-                        <h3>Skills Snapshot</h3>
-                    </div>
-                    <div class="snapshot-scroll-container">
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                    alt="HTML">
-                            </div>
-                            <span>HTML</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                    alt="CSS">
-                            </div>
-                            <span>CSS</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                            </div>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-                                    alt="Python">
-                            </div>
-                            <span>Python</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
-                                    alt="C Language">
-                            </div>
-                            <span>C Language</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-                                    alt="SQL / MySQL">
-                            </div>
-                            <span>SQL / MySQL</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                                    alt="MongoDB">
-                            </div>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                                    alt="Git & GitHub">
-                            </div>
-                            <span>Git & GitHub</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-                                    alt="Figma">
-                            </div>
-                            <span>Figma</span>
-                        </div>
-                        <div class="snapshot-item">
-                            <div class="snapshot-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"
-                                    alt="Firebase">
-                            </div>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other Strengths -->
-                <div class="skills-snapshot strengths-section">
-                    <div class="snapshot-header">
-                        <h3>Other Strengths</h3>
-                    </div>
-                    <div class="strengths-container">
-                        <div class="strength-item">
-                            <div class="strength-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.611c-.47.47-1.088.706-1.705.706s-1.233-.235-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18-.894-.527-.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568c-.47-.47-.706-1.087-.706-1.704s.235-1.233.706-1.704l1.611-1.611a.98.98 0 0 1 .837-.276c.47.07.802.48.968.925a2.501 2.501 0 1 0 3.214-3.214c-.446-.166-.855-.497-.925-.968a.979.979 0 0 1 .276-.837l1.61-1.611c.47-.47 1.088-.706 1.705-.706s1.233.235 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z" />
-                                </svg>
-                            </div>
-                            <span>Problem Solver</span>
-                        </div>
-
-                        <div class="strength-item">
-                            <div class="strength-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
-                                    <path d="M9 18h6" />
-                                    <path d="M10 22h4" />
-                                    <line x1="12" y1="2" x2="12" y2="4" />
-                                    <line x1="4.9" y1="4.9" x2="6.3" y2="6.3" />
-                                    <line x1="19.1" y1="4.9" x2="17.7" y2="6.3" />
-                                    <line x1="2" y1="12" x2="4" y2="12" />
-                                    <line x1="20" y1="12" x2="22" y2="12" />
-                                </svg>
-                            </div>
-                            <span>Quick Learner</span>
-                        </div>
-
-                        <div class="strength-item">
-                            <div class="strength-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="10" cy="7" r="4" />
-                                    <path d="M4 21v-2a4 4 0 0 1 4-4h4" />
-                                    <polyline points="16 11 21 11 21 16" />
-                                    <line x1="14" y1="18" x2="21" y2="11" />
-                                </svg>
-                            </div>
-                            <span>Adaptable</span>
-                        </div>
-
-                        <div class="strength-item">
-                            <div class="strength-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
-                            </div>
-                            <span>Team Player</span>
-                        </div>
-
-                        <div class="strength-item">
-                            <div class="strength-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <circle cx="12" cy="12" r="6" />
-                                    <circle cx="12" cy="12" r="2" />
-                                    <path d="M13 11l6-6" />
-                                    <polyline points="15 5 19 5 19 9" />
-                                </svg>
-                            </div>
-                            <span>Goal Oriented</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="projects" class="tab-content">
-            <div id="projects-list-view">
-                <section class="about-section text-center">
-                    <h2 class="section-title">My <span>Projects</span></h2>
-                    <p class="section-subtitle">Here are some of the projects I've worked on.</p>
-
-                    <!-- Filters -->
-                    <div class="projects-filters">
-                        <button class="filter-btn active" data-filter="All">All</button>
-                        <button class="filter-btn" data-filter="Web Development">Web Development</button>
-                        <button class="filter-btn" data-filter="AI / ML">AI / ML</button>
-                        <button class="filter-btn" data-filter="Frontend">Frontend</button>
-                    </div>
-
-                    <!-- Dynamic Grid Container -->
-                    <div id="projects-grid" class="projects-grid"></div>
-
-                    <!-- Stats Footer -->
-                    <div class="projects-stats-footer">
-                        <div class="stat-footer-item">
-                            <div class="stat-footer-icon icon-bg-blue">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="stat-footer-info">
-                                <h5>1</h5>
-                                <span>Project Completed</span>
-                            </div>
-                        </div>
-
-                        <div class="stat-footer-item">
-                            <div class="stat-footer-icon icon-bg-green">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                            </div>
-                            <div class="stat-footer-info">
-                                <h5 style="color: #10b981;">100%</h5>
-                                <span>Dedicated Work</span>
-                            </div>
-                        </div>
-
-                        <div class="stat-footer-item">
-                            <div class="stat-footer-icon icon-bg-purple">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg>
-                            </div>
-                            <div class="stat-footer-info">
-                                <h5 style="color: #8b5cf6;">0</h5>
-                                <span>Hackathons</span>
-                            </div>
-                        </div>
-
-                        <div class="stat-footer-item">
-                            <div class="stat-footer-icon icon-bg-orange">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>
-                            </div>
-                            <div class="stat-footer-info">
-                                <h5 style="color: #f97316;">4+</h5>
-                                <span>Technologies Used</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div id="project-details-view" style="display: none;">
-                <!-- Project details will be injected here dynamically -->
             </div>
         </div>
-        <div id="education" class="tab-content">
-            <section class="edu-section modern-edu">
-                <!-- Background decor -->
-                <div class="modern-edu-bg-glow glow-1"></div>
-                <div class="modern-edu-bg-glow glow-2"></div>
+    </section>
 
-                <div class="edu-header text-center">
-                    <h2 class="section-title">My <span>Education</span></h2>
-                    <p class="section-subtitle">My academic journey and continuous learning path.</p>
-                </div>
+    <!-- ======================================= Education page =================================-->
+    <section id="education" class="tab-content">
+        <div class="edu-bg-dots"></div>
+        <div class="edu-bg-dots-right"></div>
+        <div class="edu-bg-circle"></div>
 
-                <div class="modern-edu-container">
-                    <!-- Left: Sleek Vertical Timeline -->
-                    <div class="modern-timeline-wrapper">
-                        <!-- Item 1 -->
-                        <div class="modern-timeline-item">
-                            <div class="timeline-dot-wrapper">
-                                <div class="timeline-dot dot-blue">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                                    </svg>
-                                </div>
-                                <div class="timeline-line"></div>
+        <div class="edu-container">
+            <div class="edu-header">
+                <h2>My <span>Education</span></h2>
+                <p>My academic journey and continuous learning path.</p>
+            </div>
+
+            <div class="edu-grid">
+                <!-- Left Column: Timeline -->
+                <div class="edu-timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-blue"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content card-white">
+                            <span class="edu-badge badge-blue">Current</span>
+                            <h3>Bachelor of Technology (B.Tech)</h3>
+                            <h4 class="edu-subtitle subtitle-blue">Artificial Intelligence & Machine Learning</h4>
+
+                            <div class="edu-meta">
+                                <span><i class="fas fa-university"></i>Maharishi Mahesh Yogi Ramayan University
+                                    (MMYRU)</span>
+                                <span><i class="far fa-calendar-alt"></i> 2026 - Present</span>
                             </div>
-                            <div class="modern-timeline-content glass-card hover-lift">
-                                <div class="card-header-flex">
-                                    <span class="edu-badge badge-blue pulse-badge">Current</span>
-                                    <span class="edu-date-pill">2023 - Present</span>
-                                </div>
-                                <h3 class="gradient-text-blue">Bachelor of Technology (B.Tech)</h3>
-                                <h4>Artificial Intelligence & Machine Learning</h4>
-                                <div class="edu-meta-modern">
-                                    <span class="edu-inst text-muted">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                        </svg>
-                                        Maharishi Mahesh Yogi Ramayan University
-                                    </span>
-                                </div>
-                                <p class="edu-desc text-muted">Currently pursuing B.Tech in Artificial Intelligence and
-                                    Machine Learning (1st Year, 1st Semester). Learning core concepts of AI, ML, Data
-                                    Science and developing practical solutions through projects.</p>
 
-                                <div class="modern-edu-stats-grid">
-                                    <div class="stat-box" style="grid-column: span 2;">
-                                        <div class="stat-icon-small bg-blue-light text-blue"><svg viewBox="0 0 24 24"
-                                                fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                                <path
-                                                    d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z">
-                                                </path>
-                                            </svg></div>
-                                        <div class="stat-info">
-                                            <h5>Core Subjects</h5>
-                                            <p>AI, ML, DS, DSA</p>
-                                        </div>
+                            <p class="edu-desc">
+                                Currently pursuing B.Tech in Artificial Intelligence and Machine Learning.
+                                Learning core concepts of AI, ML, Data Science and developing practical solutions
+                                through projects.
+                            </p>
+
+                            <div class="edu-stats-grid">
+                                <div class="edu-stat-box box-blue">
+                                    <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+                                    <div class="stat-info">
+                                        <h5>Core Subjects</h5>
+                                        <p>AI, ML, DS, DSA</p>
+                                    </div>
+                                </div>
+                                <div class="edu-stat-box box-blue">
+                                    <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                                    <div class="stat-info">
+                                        <h5>Focus Areas</h5>
+                                        <p>AI Solutions, Web Dev</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Item 2 -->
-                        <div class="modern-timeline-item">
-                            <div class="timeline-dot-wrapper">
-                                <div class="timeline-dot dot-green">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                    </svg>
-                                </div>
-                                <div class="timeline-line"></div>
-                            </div>
-                            <div class="modern-timeline-content glass-card hover-lift">
-                                <div class="card-header-flex">
-                                    <span class="edu-badge badge-green">Completed</span>
-                                    <span class="edu-date-pill">2021 - 2023</span>
-                                </div>
-                                <h3 class="gradient-text-green">Higher Secondary (12th)</h3>
-                                <h4>Science (PCM)</h4>
-                                <div class="edu-meta-modern">
-                                    <span class="edu-inst text-muted">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                        </svg>
-                                        UP Board
-                                    </span>
-                                    <span class="edu-score-modern score-green">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        67%
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-green"><i class="fas fa-book"></i></div>
+                        <div class="timeline-content card-white">
+                            <h3>Higher Secondary (12th)</h3>
+                            <h4 class="edu-subtitle subtitle-green">Mathematics (PCM)</h4>
 
-                        <!-- Item 3 -->
-                        <div class="modern-timeline-item">
-                            <div class="timeline-dot-wrapper">
-                                <div class="timeline-dot dot-orange">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                        <path d="M4 22h16"></path>
-                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="modern-timeline-content glass-card hover-lift">
-                                <div class="card-header-flex">
-                                    <span class="edu-badge badge-orange">Completed</span>
-                                    <span class="edu-date-pill">2020 - 2021</span>
-                                </div>
-                                <h3 class="gradient-text-orange">Secondary (10th)</h3>
-                                <h4>UP Board</h4>
-                                <div class="edu-meta-modern">
-                                    <span class="edu-score-modern score-orange">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        83.7%
-                                    </span>
-                                </div>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-university"></i> Uttar Pradesh Board</span>
+                                <span><i class="far fa-calendar-alt"></i> 2025 - 2026</span>
+                                <span class="edu-percentage badge-green">67%</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right: Bento Grid Highlights -->
-                    <div class="modern-bento-sidebar">
-                        <div class="bento-box bento-large glass-card hover-lift">
-                            <div class="bento-header">
-                                <div class="bento-icon bg-blue-light text-blue"><svg viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                    </svg></div>
-                                <h4>Academic Excellence</h4>
+                    <div class="timeline-separator"></div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-orange"><i class="fas fa-trophy"></i></div>
+                        <div class="timeline-content card-white">
+                            <h3>Secondary (10th)</h3>
+                            <h4 class="edu-subtitle subtitle-orange">Uttar Pradesh Board</h4>
+
+                            <div class="edu-meta">
+                                <span><i class="far fa-calendar-alt"></i> 2021 - 2022</span>
+                                <span class="edu-percentage badge-orange">84%</span>
                             </div>
-                            <p class="text-muted">Built a strong foundation in Mathematics, Computer Science, and AI/ML
-                                principles through rigorous academic pursuit.</p>
-                            <div class="bento-mini-stats">
-                                <span class="bento-tag tag-blue">AI/ML</span>
-                                <span class="bento-tag tag-green">Data Science</span>
-                                <span class="bento-tag tag-orange">Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="edu-right-col">
+                    <!-- Highlights Card -->
+                    <div class="edu-highlights card-white">
+                        <h3 class="highlights-title">Education Highlights</h3>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon icon-blue"><i class="fas fa-book-open"></i></div>
+                            <div class="highlight-text">
+                                <h5>Strong Academic Foundation</h5>
+                                <p>Built a strong foundation in Mathematics, Computer Science and AI/ML.</p>
                             </div>
                         </div>
 
-                        <div class="bento-row">
-                            <div class="bento-box glass-card hover-lift">
-                                <div class="bento-icon bg-green-light text-green"><svg viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                    </svg></div>
-                                <h4>Practical Learning</h4>
-                                <p class="text-muted text-sm">Focus on real-world projects and hands-on experience.</p>
-                            </div>
-                            <div class="bento-box glass-card hover-lift">
-                                <div class="bento-icon bg-purple-light text-purple"><svg viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    </svg></div>
-                                <h4>Future Focused</h4>
-                                <p class="text-muted text-sm">Innovating with AI and Web Development.</p>
+                        <div class="highlight-item">
+                            <div class="highlight-icon icon-green"><i class="fas fa-bullseye"></i></div>
+                            <div class="highlight-text">
+                                <h5>Practical Learning</h5>
+                                <p>Focus on real-world projects and hands-on experience.</p>
                             </div>
                         </div>
 
-                        <div class="modern-quote-box glass-card shine-effect">
-                            <svg class="quote-icon-modern" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10H0z" />
+                        <div class="highlight-item">
+                            <div class="highlight-icon icon-orange"><i class="far fa-lightbulb"></i></div>
+                            <div class="highlight-text">
+                                <h5>Continuous Growth</h5>
+                                <p>Always learning new technologies and improving skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon icon-purple"><i class="fas fa-users"></i></div>
+                            <div class="highlight-text">
+                                <h5>Future Focused</h5>
+                                <p>Working towards creating innovative solutions combining AI and Web Development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote Card -->
+                    <div class="edu-quote-card">
+                        <i class="fas fa-quote-left quote-icon-left"></i>
+                        <p class="quote-text">Education is not just about learning, it's about applying knowledge to
+                            create a better tomorrow.</p>
+                        <i class="fas fa-quote-right quote-icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================= Certificate page ================================= -->
+    <section id="certificates" class="tab-content">
+        <div class="cert-bg-dots"></div>
+        <div class="cert-bg-circle"></div>
+
+        <div class="cert-container">
+            <div class="cert-header">
+                <h2>My <span>Certificates</span></h2>
+                <div class="header-icon"><i class="fas fa-award"></i></div>
+                <p>Here are some of the certifications and achievements that reflect my learning and dedication.</p>
+            </div>
+
+            <div class="cert-grid" id="cert-grid">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="cert-quote">
+                <i class="fas fa-quote-left quote-left"></i>
+                <p>"Certificates are proof of learning, but the real journey is applying that knowledge to create
+                    value."</p>
+                <i class="fas fa-quote-right quote-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal-overlay" id="cert-modal">
+        <div class="cert-modal-content">
+            <div class="cert-modal-header">
+                <div class="cert-modal-title">
+                    <i class="far fa-file-alt"></i> <span id="modal-cert-title">Certificate Title</span>
+                </div>
+                <button class="close-modal-btn" aria-label="Close Modal" onclick="closeCertModal()"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="cert-modal-body">
+                <img src="" alt="Certificate Image Viewer" id="modal-cert-img">
+            </div>
+            <div class="cert-modal-footer">
+                <div class="cert-zoom-controls">
+                    <button aria-label="Zoom Out" id="cert-zoom-out" onclick="zoomCert(-1)"><i
+                            class="fas fa-minus"></i></button>
+                    <span id="cert-zoom-text">100%</span>
+                    <button aria-label="Zoom In" id="cert-zoom-in" onclick="zoomCert(1)"><i
+                            class="fas fa-plus"></i></button>
+                    <button aria-label="Toggle Fullscreen" id="cert-zoom-expand" onclick="toggleFullscreenCert()"><i
+                            class="fas fa-expand"></i></button>
+                </div>
+                <div class="cert-action-btns">
+                    <a href="#" download id="modal-cert-download" class="btn btn-outline-blue"><i
+                            class="fas fa-download"></i> Download Certificate</a>
+                    <button class="btn btn-primary" onclick="window.print()"><i class="fas fa-print"></i> Print
+                        Certificate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshot Modal -->
+    <div class="cert-modal-overlay" id="screenshot-modal" onclick="if(event.target===this) closeScreenshotModal()">
+        <div class="cert-modal-content"
+            style="max-width: 90%; max-height: 90vh; background: transparent; box-shadow: none;">
+            <div class="cert-modal-header" style="background: white; border-radius: 16px 16px 0 0; padding: 15px 25px;">
+                <div class="cert-modal-title">
+                    <i class="far fa-image"></i> <span id="modal-screenshot-title">Screenshot</span>
+                </div>
+                <button class="close-modal-btn" onclick="closeScreenshotModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cert-modal-body"
+                style="padding: 0; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.85); border-radius: 0 0 16px 16px; overflow: hidden; height: calc(90vh - 60px);">
+                <img src="" alt="Screenshot" id="modal-screenshot-img"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div class="cert-modal-overlay" id="resume-modal" onclick="if(event.target===this) closeResumeModal()">
+        <div class="cert-modal-content" style="max-width: 900px; max-height: 90vh;">
+            <div class="cert-modal-header">
+                <div class="cert-modal-title">
+                    <i class="far fa-file-alt"></i> <span>My Resume</span>
+                </div>
+                <button class="close-modal-btn" aria-label="Close Modal" onclick="closeResumeModal()"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="cert-modal-body"
+                style="background: #f1f5f9; display: flex; justify-content: center; padding: 20px; height: 70vh;">
+                <iframe src="Assets/resume.pdf"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"></iframe>
+            </div>
+            <div class="cert-modal-footer">
+                <p style="margin: 0; color: #6b7280; font-size: 14px;">Last updated: 2026</p>
+                <a href="Assets/resume.pdf" download="Adarsh_Patel_Resume.pdf" class="btn btn-primary"><i
+                        class="fas fa-download"></i> Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================= Contact page ================================== -->
+    <section id="contact" class="tab-content">
+        <div class="contact-bg-dots"></div>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get In <span>Touch</span></h2>
+                <div class="header-icon"><i class="far fa-envelope-open"></i></div>
+                <p>Have a question or want to work together? Leave a message and I'll get back to you as soon as
+                    possible.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left Info Section -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h3>Location</h3>
+                                <p>Patijiyakhurd, Chappiya, Gonda</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <h3>Email</h3>
+                                <p>adarshpatel74088@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h3>Phone</h3>
+                                <p>+91 9415055526</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h3>Connect with me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/adarsh74088patel" class="social-icon" target="_blank"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/adarsh-patel-842075411?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                class="social-icon" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Section -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="input-group floating">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                                <i class="far fa-user input-icon"></i>
+                            </div>
+                            <div class="input-group floating">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                                <i class="far fa-envelope input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="input-group floating">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <i class="far fa-comment-alt input-icon"></i>
+                        </div>
+                        <div class="input-group floating">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                            <i class="fas fa-pencil-alt input-icon textarea-icon"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="far fa-paper-plane btn-icon"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Animation Container -->
+                    <div id="successMessage" class="success-message">
+                        <div class="success-animation">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg>
-                            <p>"Education is not just about learning, it's about applying knowledge to create a better
-                                tomorrow."</p>
-                            <div class="quote-author">- Adarsh Patel</div>
                         </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. I'll get back to you shortly.</p>
+                        <button type="button" class="btn btn-outline" id="sendAnotherBtn">Send Another Message</button>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <div id="certificates" class="tab-content">
-            <section class="cert-section modern-edu">
-                <!-- Background decor -->
-                <div class="modern-edu-bg-glow glow-1" style="background: linear-gradient(135deg, #e0f2fe, #bae6fd);"></div>
-                <div class="modern-edu-bg-glow glow-2" style="background: linear-gradient(135deg, #f3e8ff, #e9d5ff);"></div>
+    </section>
 
-                <div class="edu-header text-center">
-                    <h2 class="section-title">My <span>Certificates</span></h2>
-                    <p class="section-subtitle">Here are some of the certifications and achievements that reflect my learning and dedication.</p>
+    <!-- ====================================== Footer =========================================== -->
+    <footer class="footer-container">
+        <div class="footer-top">
+            <div class="footer-col footer-detail">
+                <div class="footer-logo">Adarsh <span>Patel</span></div>
+                <div class="footer-subtitle">AI/ML Student | Frontend Developer</div>
+                <p class="footer-desc">Passionate about building real-world solutions and exploring the power of
+                    Artificial Intelligence.</p>
+                <a href="Assets/resume.pdf" download="Adarsh_Patel_Resume.pdf" class="btn btn-outline footer-resume-btn"
+                    style="border: 2px solid #2563eb; color: #2563eb; background: transparent; cursor: pointer; padding: 12px 24px; font-weight: 500; border-radius: 12px;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+
+                <h4 class="connect-heading">Connect With Me</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/adarsh74088patel" class="social-icon" target="_blank"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adarsh-patel-842075411?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:adarshpatel74088@gmail.com" class="social-icon" aria-label="Email"><i
+                            class="far fa-envelope"></i></a>
                 </div>
+            </div>
 
-                <div class="modern-cert-grid">
-                    <!-- Certificate 1: ADCA -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-purple-light text-purple">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>ADCA Certificate</h3>
-                                <p class="cert-issuer text-purple">Computer Application</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Advanced Diploma in Computer Application.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <button class="view-cert-btn text-purple" data-cert-img="Assets/Certificates/ADCA Certificate.jpeg">
-                                View Certificate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </button>
-                        </div>
-                    </div>
+            <div class="footer-col footer-links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                    <li><a href="#certificates"><i class="fas fa-chevron-right"></i> Certificates</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
 
-                    <!-- Certificate 2: CCC -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-orange-light text-orange">
-                                <strong>CCC</strong>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>CCC Certificate</h3>
-                                <p class="cert-issuer text-orange">Computer Concepts</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Course on Computer Concepts.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <button class="view-cert-btn text-orange" data-cert-img="Assets/Certificates/CCC Certificate.jpeg">
-                                View Certificate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 3: AI for Business Professionals -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-blue-light text-blue">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2v2h-4V4a2 2 0 0 1 2-2zM9.5 6a4.5 4.5 0 0 0-4.5 4.5v1A4.5 4.5 0 0 0 9.5 16H10v2a2 2 0 0 0 4 0v-2h.5a4.5 4.5 0 0 0 4.5-4.5v-1A4.5 4.5 0 0 0 14.5 6H9.5z"/></svg>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>AI for Business Professionals</h3>
-                                <p class="cert-issuer text-blue">AI/ML</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Understanding Artificial Intelligence in a business context.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <a href="Assets/Certificates/AI for Business Professionals.pdf" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600; padding:0.5rem 0;" class="text-blue">
-                                View PDF <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 4: Critical Thinking in the AI Era -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-green-light text-green">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1-2.827 0l-4.243-4.243a8 8 0 1 1 11.313 0z"></path><circle cx="12" cy="11" r="3"></circle></svg>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>Critical Thinking in AI Era</h3>
-                                <p class="cert-issuer text-green">AI/ML</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Developing critical thinking skills for the age of AI.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <a href="Assets/Certificates/Critical Thinking in the AI Era.pdf" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600; padding:0.5rem 0;" class="text-green">
-                                View PDF <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 5: Effective Presentations -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-orange-light text-orange">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>Effective Presentations</h3>
-                                <p class="cert-issuer text-orange">Soft Skills</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Mastering the art of delivering effective presentations.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <a href="Assets/Certificates/Effective Presentations.pdf" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600; padding:0.5rem 0;" class="text-orange">
-                                View PDF <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Certificate 6: Inventory Management -->
-                    <div class="cert-card glass-card hover-lift">
-                        <div class="cert-header-top">
-                            <div class="cert-icon-box bg-blue-light text-blue">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                            </div>
-                            <div class="cert-title-area">
-                                <h3>Inventory Management</h3>
-                                <p class="cert-issuer text-blue">Management</p>
-                            </div>
-                        </div>
-                        <div class="cert-body">
-                            <p>Principles and practices of effective inventory management.</p>
-                        </div>
-                        <div class="cert-footer">
-                            <div class="cert-date"></div>
-                            <a href="Assets/Certificates/Inventory Management.pdf" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600; padding:0.5rem 0;" class="text-blue">
-                                View PDF <svg viewBox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <!-- Large Feature Banner -->
-                    <div class="cert-feature-banner glass-card shine-effect">
-                        <div class="feature-content">
-                            <div class="feature-icon-wrapper">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                            </div>
-                            <div class="feature-text">
-                                <h3 class="gradient-text-blue">Continuous Learning,<br>Continuous Growth</h3>
-                                <p>I believe in learning every day and upgrading my skills to build a better tomorrow.</p>
-                            </div>
-                        </div>
+            <div class="footer-col footer-whatido">
+                <h4 class="footer-heading">What I Do</h4>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <div class="service-text">
+                        <h5>Web Development</h5>
+                        <p>Responsive and modern web applications.</p>
                     </div>
                 </div>
-                
-                <div class="modern-quote-box glass-card cert-quote" style="margin-top: 3rem; background: #eff6ff; color: #1e3a8a;">
-                    <p style="font-size: 1.15rem; font-style: italic; font-weight: 500; line-height: 1.6; margin: 0; color: #1e3a8a;">
-                        "Certificates are proof of learning, but the real journey is applying that knowledge to create value."
-                    </p>
-                </div>
-            </section>
-        </div>
-        <div id="contact" class="tab-content">
-            <section class="contact-section modern-edu">
-                <!-- Background decor -->
-                <div class="modern-edu-bg-glow glow-1" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8);"></div>
-                <div class="modern-edu-bg-glow glow-2" style="background: linear-gradient(135deg, #e0e7ff, #c7d2fe);"></div>
-
-                <div class="edu-header text-center">
-                    <h2 class="section-title">Get In <span>Touch</span></h2>
-                    <p class="section-subtitle">Let's build something amazing together! Feel free to reach out for collaborations or just a friendly hello.</p>
-                </div>
-
-                <div class="modern-contact-container">
-                    <!-- Left: Contact Info & Socials -->
-                    <div class="contact-left-panel">
-                        <div class="contact-info-card glass-card">
-                            <div class="contact-info-item">
-                                <div class="c-icon-box text-blue bg-blue-light">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                </div>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p class="text-muted"><a href="mailto:adarshpatel74088@gmail.com" class="contact-link">adarshpatel74088@gmail.com</a></p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-info-item mt-3">
-                                <div class="c-icon-box text-green bg-green-light">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                </div>
-                                <div>
-                                    <h4>Location</h4>
-                                    <p class="text-muted">Malikpur Patijiyakhurd, Gonda, Uttar Pradesh, India</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-connect-card glass-card">
-                            <h3 class="social-title">Connect with me</h3>
-                            <div class="social-grid">
-                                <a href="https://github.com/adarsh74088patel" target="_blank" class="social-btn sb-github" target="_blank" title="GitHub">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                </a>
-                                <a href="https://www.linkedin.com/in/adarsh-patel-842075411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn sb-linkedin" target="_blank" title="LinkedIn">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                                </a>
-                                <a href="#" class="social-btn sb-twitter" target="_blank" title="Twitter / X">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                                </a>
-                                <a href="#" class="social-btn sb-instagram" target="_blank" title="Instagram">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Contact Form -->
-                    <div class="contact-right-panel">
-                        <div class="glass-form-card glass-card">
-                            <form id="contact-form" class="modern-form">
-                                <div class="form-group">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="Name" placeholder="John Doe" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="Email" placeholder="john@example.com" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="Subject" placeholder="Project Inquiry" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="Message" rows="5" placeholder="Tell me about your project..." required></textarea>
-                                </div>
-                                <button type="submit" id="submit-btn" class="gradient-btn w-100">
-                                    Send Message
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                </button>
-                            </form>
-
-                            <!-- Success Message -->
-                            <div id="form-success-msg" class="success-msg-container" style="display: none;">
-                                <div class="success-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="checkmark"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                </div>
-                                <h3>Message Sent!</h3>
-                                <p>Thank you for reaching out. I'll get back to you soon.</p>
-                                <button id="send-another-btn" class="gradient-btn w-100" style="margin-top: 1.5rem;">Send Another Message</button>
-                            </div>
-                        </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <div class="service-text">
+                        <h5>AI/ML Projects</h5>
+                        <p>Machine learning models and data analysis.</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="modern-footer">
-        <div class="footer-container glass-card">
-            <div class="footer-grid">
-                
-                <!-- Column 1: Brand -->
-                <div class="footer-col-brand">
-                    <h2>Adarsh <span class="text-blue">Patel</span></h2>
-                    <p class="brand-bio">AI/ML Student | Frontend Developer<br><br>Passionate about building real-world solutions and exploring the power of Artificial Intelligence.</p>
-                    <a href="#" class="footer-resume-outline">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                        Download Resume
-                    </a>
-                    
-                    <div class="footer-social-meta">
-                        <h4 class="meta-title">Connect With Me</h4>
-                        <div class="footer-socials">
-                            <a href="https://github.com/adarsh74088patel" target="_blank" class="fs-icon fsi-github" title="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                            <a href="https://www.linkedin.com/in/adarsh-patel-842075411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="fs-icon fsi-linkedin" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-                            <a href="Assets/Resume.png" target="_blank" class="fs-icon fsi-twitter" title="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
-                            <a href="#" class="fs-icon fsi-email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2: Quick Links -->
-                <div class="footer-col-links">
-                    <h3 class="f-col-title">Quick Links</h3>
-                    <ul class="f-links-list">
-                        <li><a href="#home" class="tab-link" data-target="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Home</a></li>
-                        <li><a href="#about" class="tab-link" data-target="about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> About</a></li>
-                        <li><a href="#skills" class="tab-link" data-target="skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Skills</a></li>
-                        <li><a href="#projects" class="tab-link" data-target="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Projects</a></li>
-                        <li><a href="#education" class="tab-link" data-target="education"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Education</a></li>
-                        <li><a href="#certificates" class="tab-link" data-target="certificates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Certificates</a></li>
-                        <li><a href="#contact" class="tab-link" data-target="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg> Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: What I Do -->
-                <div class="footer-col-services">
-                    <h3 class="f-col-title">What I Do</h3>
-                    <div class="f-service-item">
-                        <div class="f-serv-icon bg-blue-light text-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
-                        <div class="f-serv-text">
-                            <h4>Web Development</h4>
-                            <p>Responsive and modern web applications.</p>
-                        </div>
-                    </div>
-                    <div class="f-service-item">
-                        <div class="f-serv-icon bg-blue-light text-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
-                        <div class="f-serv-text">
-                            <h4>AI/ML Projects</h4>
-                            <p>Machine learning models and data analysis.</p>
-                        </div>
-                    </div>
-                    <div class="f-service-item">
-                        <div class="f-serv-icon bg-blue-light text-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
-                        <div class="f-serv-text">
-                            <h4>Frontend Development</h4>
-                            <p>Building interactive and user-friendly interfaces.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 4: Get In Touch -->
-                <div class="footer-col-contact">
-                    <h3 class="f-col-title">Get In Touch</h3>
-                    <div class="f-contact-item">
-                        <div class="f-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
-                        <div class="f-contact-text">
-                            <h4>Email</h4>
-                            <a href="mailto:adarshpatel74088@gmail.com">adarshpatel74088@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="f-contact-item">
-                        <div class="f-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
-                        <div class="f-contact-text">
-                            <h4>Phone</h4>
-                            <p>9415055526</p>
-                        </div>
-                    </div>
-                    <div class="f-contact-item">
-                        <div class="f-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-                        <div class="f-contact-text">
-                            <h4>Location</h4>
-                            <p>Malikpur Patijiyakhurd, Gonda, Uttar Pradesh, India</p>
-                        </div>
-                    </div>
-                    <div class="f-contact-item f-avail-item">
-                        <div class="f-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
-                        <div class="f-contact-text">
-                            <h4>Availability</h4>
-                            <p>Open for Internships & Opportunities <span class="avail-dot"></span></p>
-                        </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="service-text">
+                        <h5>Frontend Development</h5>
+                        <p>Building interactive and user-friendly interfaces.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer Bottom Bar -->
-            <div class="footer-bottom-bar">
-                <div class="fb-left">
-                    <p>&copy; 2026 Adarsh Patel. All rights reserved.</p>
-                </div>
-                <div class="fb-center">
-                    <p><svg viewBox="0 0 24 24" fill="#3b82f6" stroke="#3b82f6" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> Thanks for visiting!</p>
-                </div>
-                <div class="fb-tech">
-                    <span class="built-with">Built with</span>
-                    <div class="tech-icons">
-                        <span class="t-badge html5">HTML5</span>
-                        <span class="t-badge css3">CSS3</span>
-                        <span class="t-badge js">JS</span>
+            <div class="footer-col footer-contact">
+                <h4 class="footer-heading">Get In Touch</h4>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="far fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <h5>Email</h5>
+                        <a href="mailto:adarshpatel74088@gmail.com">adarshpatel74088@gmail.com</a>
                     </div>
                 </div>
-                <div class="fb-right">
-                    <a href="#" class="gradient-btn btn-small">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                        Download Resume
-                    </a>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-text">
+                        <h5>Phone</h5>
+                        <p>+91 9415055526</p>
+                    </div>
                 </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text">
+                        <h5>Location</h5>
+                        <p>Patijiyakhurd, Chappiya, Gonda</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="far fa-clock"></i></div>
+                    <div class="contact-text">
+                        <h5>Availability</h5>
+                        <p>Open for Internships & Opportunities <span class="status-dot"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 <span class="text-blue">Adarsh Patel</span>. All rights reserved.
+            </div>
+            <div class="footer-thanks">
+                <i class="fas fa-heart"></i> Thanks for visiting!
+            </div>
+            <div class="footer-builtwith">
+                <span>Built with</span>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <a href="Assets/resume.pdf" download="Adarsh_Patel_Resume.pdf" class="btn btn-primary footer-bottom-btn"
+                    style="border: none; cursor: pointer; padding: 12px 24px; font-weight: 500; border-radius: 12px;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
             </div>
         </div>
     </footer>
-
-    <!-- Project Details Modal -->
-    <div id="project-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close-btn">&times;</button>
-            <div class="modal-body" id="project-modal-body">
-                <!-- Project Details will be injected here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Certificate Modal -->
-    <div id="cert-modal" class="modal-overlay">
-        <div class="cert-modal-content">
-            <button class="cert-modal-close-btn">&times;</button>
-            <div class="cert-modal-body">
-                <img id="cert-modal-img" src="" alt="Certificate Preview" style="width: 100%; height: auto; border-radius: 10px;" />
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="project.js"></script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("TODO-YOUR-PUBLIC-KEY"); // TODO: Replace with your actual EmailJS Public Key
+    })();
+</script>
+<script src="script.js"></script>
+<script src="project.js"></script>
+<script src="certificate.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }
+                })
+                .catch(error => {
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.log('ServiceWorker registration failed: ', error);
+                    }
+                });
+        });
+    }
+</script>
 
 </html>

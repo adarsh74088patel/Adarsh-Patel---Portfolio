@@ -1,161 +1,293 @@
-const typedTextSpans = document.querySelectorAll(".typed-text");
-const cursorSpans = document.querySelectorAll(".cursor");
+// --- Preloader Logic ---
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+            document.body.classList.remove('loading');
+        }, 800); // 800ms delay to show the animation
+    }
+});
 
-const textArray = ["B.Tech AI/ML Student", "Frontend Developer", "Python Programmer", "Web Designer"];
-const typingDelay = 100;
-const erasingDelay = 50;
-const newTextDelay = 2000; // Delay between current and next text
-let textArrayIndex = 0;
+const links = document.querySelectorAll('.nav-link');
+const tabs = document.querySelectorAll('.tab-content');
+const hamburger = document.getElementById('hamburger');
+const navUl = document.querySelector('.navbar ul');
+const navResume = document.querySelector('.nav-resume');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+        if (navResume) navResume.classList.toggle('show');
+        hamburger.classList.toggle('active');
+        
+        // Toggle icon between bars and times
+        const icon = hamburger.querySelector('i');
+        if (hamburger.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+}
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        links.forEach(item => item.classList.remove('active'));
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+        
+        link.classList.add('active');
+        const target = document.getElementById(link.dataset.tab);
+        if (target) {
+            target.classList.add('active-tab');
+        }
+        
+        // Close mobile menu when a link is clicked
+        if (navUl && navUl.classList.contains('show')) {
+            navUl.classList.remove('show');
+            if (navResume) navResume.classList.remove('show');
+            if (hamburger) {
+                hamburger.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+});
+
+// --- Skills Data and Generation ---
+const skillsData = [
+    {
+        title: "Frontend",
+        icon: "fas fa-desktop",
+        colorClass: "color-blue",
+        bgClass: "bg-blue",
+        footerIcon: "fas fa-star",
+        footerText: "Building responsive and user-friendly web interfaces.",
+        skills: [
+            { name: "HTML5", percentage: 95 },
+            { name: "CSS3", percentage: 90 },
+            { name: "JavaScript", percentage: 85 },
+            { name: "Responsive Design", percentage: 90 }
+        ]
+    },
+    {
+        title: "Programming",
+        icon: "fas fa-code",
+        colorClass: "color-green",
+        bgClass: "bg-green",
+        footerIcon: "fas fa-trophy",
+        footerText: "Strong foundation in programming and problem-solving.",
+        skills: [
+            { name: "Python", percentage: 90 },
+            { name: "C Language", percentage: 80 }
+        ]
+    },
+    {
+        title: "AI / ML",
+        icon: "fas fa-brain",
+        colorClass: "color-purple",
+        bgClass: "bg-purple",
+        footerIcon: "fas fa-star",
+        footerText: "Learning and building intelligent solutions with AI.",
+        skills: [
+            { name: "Python", percentage: 85 },
+            { name: "NumPy", percentage: 80 },
+            { name: "Pandas", percentage: 75 },
+            { name: "Scikit-Learn", percentage: 70 },
+            { name: "TensorFlow", percentage: 65 }
+        ]
+    },
+    {
+        title: "Tools",
+        icon: "fas fa-cog",
+        colorClass: "color-orange",
+        bgClass: "bg-orange",
+        footerIcon: "fas fa-rocket",
+        footerText: "Using modern tools to build, test and deploy efficiently.",
+        skills: [
+            { name: "Git", percentage: 90 },
+            { name: "GitHub", percentage: 95 },
+            { name: "VS Code", percentage: 90 },
+            { name: "Chrome DevTools", percentage: 80 }
+        ]
+    }
+];
+
+const otherStrengthsData = [
+    { name: "Problem Solver", icon: "fas fa-puzzle-piece" },
+    { name: "Quick Learner", icon: "far fa-lightbulb" },
+    { name: "Adaptable", icon: "fas fa-user-cog" },
+    { name: "Team Player", icon: "fas fa-users" },
+    { name: "Goal Oriented", icon: "fas fa-bullseye" }
+];
+
+const skillsContainer = document.getElementById('skills-cards-wrapper');
+if (skillsContainer) {
+    skillsData.forEach(card => {
+        let skillItemsHTML = '';
+        card.skills.forEach(skill => {
+            skillItemsHTML += `
+                <div class="skill-item ${card.colorClass}">
+                    <div class="skill-info"><span>${skill.name}</span></div>
+                    <div class="progress-bar"><div class="progress" style="width: ${skill.percentage}%;"></div></div>
+                </div>
+            `;
+        });
+
+        skillsContainer.innerHTML += `
+            <div class="skill-card">
+                <div class="skill-card-header ${card.colorClass}">
+                    <div class="skill-icon"><i class="${card.icon}"></i></div>
+                    <h3>${card.title}</h3>
+                </div>
+                <div class="skill-list">
+                    ${skillItemsHTML}
+                </div>
+                <div class="skill-footer ${card.bgClass}">
+                    <div class="footer-icon"><i class="${card.footerIcon}"></i></div>
+                    <p>${card.footerText}</p>
+                </div>
+            </div>
+        `;
+    });
+}
+
+const strengthsContainer = document.getElementById('strengths-list');
+if (strengthsContainer) {
+    otherStrengthsData.forEach(strength => {
+        strengthsContainer.innerHTML += `
+            <div class="strength-item">
+                <i class="${strength.icon}"></i>
+                <span>${strength.name}</span>
+            </div>
+        `;
+    });
+}
+
+// --- Contact Form Animation ---
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const btn = this.querySelector('button[type="submit"]');
+        const originalText = btn.innerHTML;
+        
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        btn.disabled = true;
+        
+        // Use EmailJS to send the form
+        // TODO: Replace with your actual Service ID and Template ID
+        emailjs.sendForm('TODO-YOUR-SERVICE-ID', 'TODO-YOUR-TEMPLATE-ID', this)
+            .then(function() {
+                btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully';
+                btn.style.background = '#10b981'; // Success green
+                contactForm.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            }, function(error) {
+                console.error('EmailJS error:', error);
+                btn.innerHTML = '<i class="fas fa-times"></i> Failed to Send';
+                btn.style.background = '#ef4444'; // Error red
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            });
+    });
+    
+    // Send another message logic
+    const sendAnotherBtn = document.getElementById('sendAnotherBtn');
+    if (sendAnotherBtn) {
+        sendAnotherBtn.addEventListener('click', () => {
+            document.getElementById('successMessage').classList.remove('active');
+        });
+    }
+}
+
+// --- Anchor Link Navigation Logic ---
+// Handle all anchor links (like View Projects, Contact Me, Footer links) that point to tabs
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').substring(1);
+        if (!targetId) return; // Ignore bare '#' links
+        
+        const targetTabLink = document.querySelector(`.nav-link[data-tab="${targetId}"]`);
+        
+        // If a corresponding tab exists, switch to it
+        if (targetTabLink) {
+            e.preventDefault();
+            targetTabLink.click(); // Trigger the tab switch
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll back to top
+        }
+    });
+});
+
+// --- Typewriter Effect ---
+const words = ["B.Tech AI/ML Student", "Python Developer", "Frontend Developer"];
+let wordIndex = 0;
 let charIndex = 0;
+let isDeleting = false;
+const typedTextElement = document.getElementById("typed-text");
 
 function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    cursorSpans.forEach(span => {
-      if (!span.classList.contains("typing")) span.classList.add("typing");
-    });
-    typedTextSpans.forEach(span => {
-      span.textContent += textArray[textArrayIndex].charAt(charIndex);
-    });
-    charIndex++;
-    setTimeout(type, typingDelay);
-  }
-  else {
-    cursorSpans.forEach(span => {
-      span.classList.remove("typing");
-    });
-    setTimeout(erase, newTextDelay);
-  }
+    if (!typedTextElement) return;
+    
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+        // Remove characters
+        typedTextElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        // Add characters
+        typedTextElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100; // Slower typing, faster erasing
+    
+    if (!isDeleting && charIndex === currentWord.length) {
+        // Pause at full word
+        typeSpeed = 1500;
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        // Pause before typing next word
+        typeSpeed = 500;
+    }
+    
+    setTimeout(type, typeSpeed);
 }
 
-function erase() {
-  if (charIndex > 0) {
-    cursorSpans.forEach(span => {
-      if (!span.classList.contains("typing")) span.classList.add("typing");
-    });
-    typedTextSpans.forEach(span => {
-      span.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-    });
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  }
-  else {
-    cursorSpans.forEach(span => {
-      span.classList.remove("typing");
-    });
-    textArrayIndex++;
-    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-
-  // Tab Navigation Logic
-  const tabLinks = document.querySelectorAll('.tab-link');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('data-target');
-
-      if (!targetId) return;
-
-      // Remove active class from all links and tabs
-      document.querySelectorAll('.nav-links .tab-link').forEach(nav => nav.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      // Add active class to clicked link in nav
-      const navLink = document.querySelector(`.nav-links .tab-link[data-target="${targetId}"]`);
-      if (navLink) navLink.classList.add('active');
-
-      // Add active class to target content
-      const targetContent = document.getElementById(targetId);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
-
-      // Scroll to top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  });
-
-  // Initialize Feather Icons
-  if (typeof feather !== 'undefined') {
-    feather.replace();
-  }
-
-  // Certificate Modal Logic
-  const certBtns = document.querySelectorAll('.view-cert-btn');
-  const certModal = document.getElementById('cert-modal');
-  const certModalImg = document.getElementById('cert-modal-img');
-  const certModalCloseBtn = document.querySelector('.cert-modal-close-btn');
-
-  if (certBtns && certModal && certModalImg) {
-    certBtns.forEach(btn => {
-      btn.addEventListener('click', function () {
-        const imgSrc = this.getAttribute('data-cert-img');
-        if (imgSrc) {
-          certModalImg.src = imgSrc;
-          certModal.classList.add('active');
-        }
-      });
-    });
-  }
-
-  if (certModalCloseBtn) {
-    certModalCloseBtn.addEventListener('click', () => {
-      certModal.classList.remove('active');
-      setTimeout(() => { certModalImg.src = ''; }, 300);
-    });
-  }
-
-  if (certModal) {
-    certModal.addEventListener('click', (e) => {
-      if (e.target === certModal) {
-        certModal.classList.remove('active');
-        setTimeout(() => { certModalImg.src = ''; }, 300);
-      }
-    });
-  }
-
-  // Contact Form Submission Logic
-  const contactForm = document.getElementById('contact-form');
-  const formSuccessMsg = document.getElementById('form-success-msg');
-  const sendAnotherBtn = document.getElementById('send-another-btn');
-
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby3XilpbY5yyNtGIo35vWzuQmZYmR6EuD7bPAe6SZ5ius0ge9hqHNHDDxMCa5zKEEKRzA/exec'; // Replace with your URL
-  const submitBtn = document.getElementById('submit-btn');
-
-  if (contactForm && formSuccessMsg) {
-    contactForm.addEventListener('submit', e => {
-      e.preventDefault();
-
-      if (submitBtn) submitBtn.innerHTML = 'Sending...';
-
-      fetch(scriptURL, { method: 'POST', body: new FormData(contactForm), mode: 'no-cors' })
-        .then(response => {
-          // With no-cors, response is opaque, but we assume success if no network error
-          contactForm.style.display = 'none';
-          formSuccessMsg.style.display = 'block';
-          if (submitBtn) submitBtn.innerHTML = 'Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
-        })
-        .catch(error => {
-          console.error('Error!', error.message);
-          alert("Something went wrong. Please try again.");
-          if (submitBtn) submitBtn.innerHTML = 'Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
-        });
-    });
-  }
-
-  if (sendAnotherBtn) {
-    sendAnotherBtn.addEventListener('click', function () {
-      // Reset form
-      contactForm.reset();
-      // Hide success message and show form
-      formSuccessMsg.style.display = 'none';
-      contactForm.style.display = 'block';
-    });
-  }
+// Start typing animation once DOM content is loaded
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(type, 1000); // Start typing after 1 second delay
 });
+
+// --- Resume Modal Logic ---
+function openResumeModal() {
+    const modal = document.getElementById('resume-modal');
+    if (modal) {
+        modal.classList.add('active-modal');
+    }
+}
+
+function closeResumeModal() {
+    const modal = document.getElementById('resume-modal');
+    if (modal) {
+        modal.classList.remove('active-modal');
+    }
+}
